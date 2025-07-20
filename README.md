@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📅 Recurring Date Picker (Next.js + Zustand + Tailwind)
 
-## Getting Started
+A highly customizable recurring date picker UI component built using **React**, **Next.js**, **Tailwind CSS**, and **Zustand** — inspired by the flexible recurrence pattern editor in the **TickTick app**.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- 🔁 **Recurrence Options**: Daily, Weekly, Monthly, Yearly
+- 🎯 **Custom Intervals**: Every X days/weeks/months/years
+- 📆 **Start & End Dates**: Select a start date and optional end date
+- 🧠 **Day & Pattern Selection**:
+  - Select specific weekdays
+  - "The second Tuesday of every month"-style logic
+- 📤 **Exclusions**: Ability to skip weekends and exclude specific dates
+- 🖼️ **Live Preview**: See recurring dates in a visual calendar + paginated list
+- 🎨 **Responsive UI**: Beautifully styled with Tailwind CSS and custom theme
+- ⚙️ **State Management**: Powered by Zustand for global state
+
+---
+
+## 🛠️ Tech Stack
+
+- ⚛️ [Next.js](https://nextjs.org/) — React framework
+- 🎨 [Tailwind CSS](https://tailwindcss.com/) — styling
+- 🧠 [Zustand](https://github.com/pmndrs/zustand) — state management
+- 📅 [date-fns](https://date-fns.org/) — date calculations
+
+---
+
+## 🚀 Getting Started
 
 ```bash
+# Clone the repo
+git clone https://github.com/JahnaviPonna/recurring-date-picker-js.git
+cd recurring-date-picker-js
+
+# Install dependencies
+npm install
+
+## Run dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Visit: http://localhost:3000
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📸 UI Preview
 
-## Learn More
+📦 Folder Structure
 
-To learn more about Next.js, take a look at the following resources:
+src/
+├── app/
+│   ├── components/
+│   │   ├── CalendarPreview.jsx
+│   │   ├── CustomRecurrence.jsx
+│   │   ├── DateRangeSelector.jsx
+│   │   ├── DayOfWeekSelector.jsx
+│   │   ├── MonthDaySelector.jsx
+│   │   ├── RecurrenceOptions.jsx
+│   │   ├── SkipWeekendsToggle.jsx
+│   │   └── ExcludeDatesPanel.jsx
+│   ├── hooks/
+│   │   └── useRecurringDates.js
+│   ├── store/
+│   │   └── useDatePickerStore.js
+│   └── page.jsx
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ✅ Accessibility
 
-## Deploy on Vercel
+- Fully keyboard navigable
+- ARIA roles used where appropriate
+- Screen reader friendly
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+MIT © Jahnavi Ponna
+
+---
+
+## 🌐 Live Demo
+
+https://recurring-date-picker-js.vercel.app/
