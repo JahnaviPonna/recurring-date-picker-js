@@ -13,7 +13,7 @@ A highly customizable recurring date picker UI component built using **React**, 
   - Select specific weekdays
   - "The second Tuesday of every month"-style logic
 - 📤 **Exclusions**: Ability to skip weekends and exclude specific dates
-- 🖼️ **Live Preview**: See recurring dates in a visual calendar + paginated list
+- 🖼️ **Live Preview**: See recurring dates in a visual calendar
 - 🎨 **Responsive UI**: Beautifully styled with Tailwind CSS and custom theme
 - ⚙️ **State Management**: Powered by Zustand for global state
 
@@ -24,7 +24,6 @@ A highly customizable recurring date picker UI component built using **React**, 
 - ⚛️ [Next.js](https://nextjs.org/) — React framework
 - 🎨 [Tailwind CSS](https://tailwindcss.com/) — styling
 - 🧠 [Zustand](https://github.com/pmndrs/zustand) — state management
-- 📅 [date-fns](https://date-fns.org/) — date calculations
 
 ---
 
@@ -40,10 +39,10 @@ npm install
 
 ## Run dev server
 npm run dev
-```
+
 
 ## Visit: http://localhost:3000
-
+```
 ---
 
 ## 📸 UI Preview
